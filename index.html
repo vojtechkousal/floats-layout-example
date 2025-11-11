@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Basic Nav Example</title>
+    <link rel="stylesheet" href="./main.css"> 
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#"> <img src="./images/logo.png" alt="Squirrel logo">
+            </a> <!-- logo -->
+            <span class="spacer"></span>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li id="services-li">
+                    <a href="./pages/services.html">Services</a>
+                    <ul id="services-menu">
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Soups</a></li>
+                        <li><a href="#">Coffee</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="1">
+            <div id="article-image-1">
+                <img src="./images/bakery.jpeg">
+            </div>
+            <div id="article-text-1">
+                <h1 style="text-align: center;">The Nutty Squirrel Bakery</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque.</p>
+                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque. </p>
+            </div>
+        </article>
+
+        <article id="2">
+            <div id="article-image-2">
+                <img src="./images/squirrel.jpg">
+            </div>
+            <div id="article-text-2">
+                <h2 style="text-align: center;">Cute Squirrel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque.</p>
+                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque. </p>
+            </div>
+        </article>
+
+        <article id="3">
+            <div class="article-image-3" id="article-image-3a">
+                <img src="./images/nut1.jpg">
+            </div>
+
+            <div class="article-image-3" id="article-image-3b">
+                <img src="./images/nut2.jpg">
+            </div>
+
+            <div id="article-text-3">
+                <h2 style="text-align: center;">The Nutzz</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque.</p>
+                    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur cum minima nobis nisi repellat a eius dolor voluptate. Et corrupti possimus iste voluptatibus aliquid culpa eveniet provident delectus atque. </p>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="FAQ">FAQ</a></li>
+                <li><a href="Terms">Terms</a></li>
+                <li><a href="Privacy">Privacy</a></li>
+                <li><a href="Cookies">Cookies</a></li>
+            </ul>
+        </nav>
+        <p>© 2024 My Website</p>
+    </footer>
+</body>
+</html>

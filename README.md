@@ -1,1 +1,1 @@
-# floats-layout-example
+A project with basic float and overflow html examples.

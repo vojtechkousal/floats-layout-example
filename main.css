@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    min-width: 100vw;
+    z-index: 10;
+}
+
+nav{
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: beige;
+}
+
+nav img {
+    max-height: 48px;
+}
+
+.spacer {
+    display: inline-block;
+    /** Parent width - Logo width - Text width **/
+    width: calc(100% - 50px - 300px);
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+nav ul li a.current {
+    font-weight: bold;
+}
+    
+nav ul li a:link,
+nav ul li a:visited {
+    color: brown
+}
+nav ul li a:hover {
+    color:blueviolet
+}
+
+nav ul li a:active {
+    color: lightgreen
+}
+
+main {
+    padding-top: 150px;
+    min-height: 80vh;
+}
+
+article {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#article-text-1 {
+    clear: none;
+}
+
+#article-image-1 {
+    float: left;
+}
+
+#article-image-2 {
+    float: right;
+}
+
+.article-image-3 {
+    max-width: 25%;
+}
+
+#article-image-3a {
+    float: left;
+}
+
+#article-image-3b {
+    float: right;
+}
+
+#article-text-3 {
+    clear: both;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 2px solid #ccc;
+}
+
+.aside-list  {
+    display: block;
+    text-align: left;
+}
+
+h1,h2 {
+    margin: 10px;
+    color: brown;
+}
+
+img {
+    max-height: 200px;
+    margin: 10px;
+}
+
+
+p {
+    margin: 10px;
+}
+
+.back-to-top {
+  position: fixed;        /* Stays in the same place even when scrolling */
+  bottom: 20px;           /* Distance from the bottom */
+  right: 20px;            /* Distance from the right */
+  background-color: beige; /* Button color */
+  color: brown;           /* Text color */
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 2px solid brown;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+footer {
+    background-color: beige;
+    text-align: center;
+    margin-bottom: 0vh;
+}
+
+/**Services dropdown menu**/
+#services-li {
+    position: relative;
+}
+
+#services-li:hover #services-menu {
+    opacity: 0.7;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.service-title {
+    background-color: beige;
+    min-width: 150px;
+    position: sticky;
+    top: 136px;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid brown;
+    z-index: 1;
+}
+
+#services-menu {
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    z-index: 1;
+    margin-bottom: 0px;
+    padding: 4px 16px;
+    background-color: rgb(255, 221, 0);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2vh);
+    transition: opacity 0.3s, transform 0.15s;
+}
+
+#services-menu a {
+    display: inline-block;
+
+    white-space: nowrap;
+}
+
+.service {
+    position: relative;
+    z-index: -1;
+}
